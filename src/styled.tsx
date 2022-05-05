@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import { resizeCalc } from './helpers/resizeCalc'
 
 export const GlobalStyle = createGlobalStyle`
+  ${resizeCalc}
   /* Указываем box sizing */
   *,
   *::before,
@@ -9,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
     line-height: 28px;
   }
 

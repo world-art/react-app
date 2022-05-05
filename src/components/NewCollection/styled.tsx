@@ -1,40 +1,49 @@
 import styled from 'styled-components';
+import { breakpoints } from '../../constants/breakpoints';
 
 export const NewCollectionContainerStyled = styled.div`
-	width: 760px;
-	padding: 20px;
+	width: 76rem;
+	padding: 2rem;
 	background-color: #f5f7f9;
 	border-radius: 8px;
+	transition: width 0.5s, height 0.5s;
 
-	@media (min-width: 2560px) {
-		width: 1020px;
-		height: 1104px;
+	@media (min-width: ${breakpoints.DESKTOP_XL}px) {
+		width: 102rem;
+		height: 110.4rem;
 	}
 
-	@media (max-width: 1440px) {
-		width: 480px;
-		height: 596px;
+	@media (max-width: ${breakpoints.DESKTOP_M}px) {
+		width: 48rem;
+		height: 59.6rem;
 	}
 `;
 
-export const NewCollectionImgWrapperStyled = styled.div<{color: string}>`
-	height: 680px;
+export const NewCollectionWrapperStyled = styled.div`
+	display: flex;
+	flex-direction: column;
+  row-gap: 1.2rem;
+  height: 100%;
+`;
+
+export const NewCollectionImgWrapperStyled = styled.div<{ color: string }>`
+	flex-grow: 1;
 	svg {
 		border-radius: 4px;
-    fill: #${({ color }) => color};
+		fill: #${({ color }) => color};
 	}
 
-	@media (min-width: 2560px) {
-		height: 980px;
+  @media (min-width: ${breakpoints.DESKTOP_XL}px) {
+		height: 98rem;
 	}
 
-	@media (max-width: 1440px) {
-		height: 472px;
+  @media (max-width: ${breakpoints.DESKTOP_M}px) {
+		height: 47.2rem;
 	}
 `;
 
 export const NewCollectionTextWrapperStyled = styled.div`
-	margin-top: 20px;
 	text-transform: uppercase;
 	color: #34334e;
+	font-size: 24px;
 `;
