@@ -22,8 +22,8 @@ export const NewCollectionContainerStyled = styled.div`
 export const NewCollectionWrapperStyled = styled.div`
 	display: flex;
 	flex-direction: column;
-  row-gap: 1.2rem;
-  height: 100%;
+	row-gap: 1.2rem;
+	height: 100%;
 `;
 
 export const NewCollectionImgWrapperStyled = styled.div<{ color: string }>`
@@ -33,11 +33,11 @@ export const NewCollectionImgWrapperStyled = styled.div<{ color: string }>`
 		fill: #${({ color }) => color};
 	}
 
-  @media (min-width: ${breakpoints.DESKTOP_XL}px) {
+	@media (min-width: ${breakpoints.DESKTOP_XL}px) {
 		height: 98rem;
 	}
 
-  @media (max-width: ${breakpoints.DESKTOP_M}px) {
+	@media (max-width: ${breakpoints.DESKTOP_M}px) {
 		height: 47.2rem;
 	}
 `;

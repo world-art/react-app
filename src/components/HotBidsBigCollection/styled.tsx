@@ -43,10 +43,10 @@ export const HotBidsBigCollectionIconStyled = styled.div<{ color: string }>`
 		}
 	}
 
-  @media (min-width: 2560px) {
-    width: 13.2rem;
-    height: 12.9rem;
-  }
+	@media (min-width: 2560px) {
+		width: 13.2rem;
+		height: 12.9rem;
+	}
 
 	@media (max-width: ${breakpoints.DESKTOP_M}px) {
 		& {
@@ -68,5 +68,5 @@ export const HotBidsBigCollectionTextStyled = styled.div`
 	height: 2.8rem;
 	text-transform: uppercase;
 	color: #34334e;
-  font-size: 24px;
+	font-size: 24px;
 `;

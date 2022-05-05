@@ -6,9 +6,9 @@ export const HotBidsContainerStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	row-gap: 2rem;
-  transition: width 0.5s, height 0.5s;
+	transition: width 0.5s, height 0.5s;
 
-  @media (min-width: ${breakpoints.DESKTOP_XL}px) {
+	@media (min-width: ${breakpoints.DESKTOP_XL}px) {
 		width: 76rem;
 		height: 110.4rem;
 	}

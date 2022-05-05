@@ -32,7 +32,7 @@ export const HotBidsSmallCollectionIconStyled = styled.div<{ color: string }>`
 		display: none;
 	}
 
-  @media (min-width: ${breakpoints.DESKTOP_XL}px) {
+	@media (min-width: ${breakpoints.DESKTOP_XL}px) {
 		&:last-child {
 			display: block;
 		}
@@ -46,8 +46,8 @@ export const HotBidsSmallCollectionIconStyled = styled.div<{ color: string }>`
 `;
 
 export const HotBidsSmallCollectionTextStyled = styled.div`
-  height: 2.8rem;
+	height: 2.8rem;
 	text-transform: uppercase;
 	color: #34334e;
-  font-size: 24px;
+	font-size: 24px;
 `;
